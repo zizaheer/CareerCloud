@@ -3,3 +3,4 @@ C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.DataAc
 C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.DataAccessLayer\obj\Debug\CareerCloud.DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.DataAccessLayer\obj\Debug\CareerCloud.DataAccessLayer.dll
 C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.DataAccessLayer\obj\Debug\CareerCloud.DataAccessLayer.pdb
+C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.DataAccessLayer\obj\Debug\CareerCloud.DataAccessLayer.csprojResolveAssemblyReference.cache
