@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace CareerCloud.Pocos
 {
@@ -20,7 +21,19 @@ namespace CareerCloud.Pocos
         public DateTime? CompletionDate { get; set; }
         [Column("Completion_Percent")]
         public Byte? CompletionPercent { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         [Column("Time_Stamp")]
         public Byte[] TimeStamp { get; set; }
+
+        public virtual ApplicantProfilePoco ApplicantProfile { get; set; } //done
+
+
+
+
+
+
+
+
     }
 }

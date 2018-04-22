@@ -36,7 +36,13 @@ namespace CareerCloud.Pocos
         [Column("Prefferred_Language")]
         public string PrefferredLanguage { get; set; }
         //public char Prefferred_Language { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         [Column("Time_Stamp")]
         public Byte[] TimeStamp { get; set; }
+
+        public virtual ICollection<ApplicantProfilePoco> ApplicantProfiles { get; set; }
+        public virtual ICollection<SecurityLoginsLogPoco> SecurityLoginsLogs { get; set; }
+        public virtual ICollection<SecurityLoginsRolePoco> SecurityLoginsRoles { get; set; }
     }
 }

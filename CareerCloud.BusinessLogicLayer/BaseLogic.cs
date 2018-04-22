@@ -43,6 +43,7 @@ namespace CareerCloud.BusinessLogicLayer
             }
 
             _repository.Add(pocos);
+
         }
 
         public virtual void Update(TPoco[] pocos)

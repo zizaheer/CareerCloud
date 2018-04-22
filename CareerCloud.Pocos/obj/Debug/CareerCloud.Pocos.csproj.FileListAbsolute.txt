@@ -1,6 +1,0 @@
-C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.Pocos\bin\Debug\CareerCloud.Pocos.dll
-C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.Pocos\bin\Debug\CareerCloud.Pocos.pdb
-C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.Pocos\obj\Debug\CareerCloud.Pocos.csproj.CoreCompileInputs.cache
-C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.Pocos\obj\Debug\CareerCloud.Pocos.dll
-C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.Pocos\obj\Debug\CareerCloud.Pocos.pdb
-C:\Humber Bridging Program\Assignment\Application\CareerCloud\CareerCloud.Pocos\obj\Debug\CareerCloud.Pocos.csprojResolveAssemblyReference.cache

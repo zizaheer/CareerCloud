@@ -33,7 +33,15 @@ namespace CareerCloud.Pocos
         public short EndMonth { get; set; }
         [Column("End_Year")]
         public int EndYear { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         [Column("Time_Stamp")]
         public Byte[] TimeStamp { get; set; }
+
+        public virtual ApplicantProfilePoco ApplicantProfile { get; set; }
+        public virtual SystemCountryCodePoco SystemCountryCode { get; set; }
+
+
+
     }
 }

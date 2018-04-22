@@ -27,8 +27,12 @@ namespace CareerCloud.Pocos
         [Column("Zip_Postal_Code")]
         public string PostalCode { get; set; }
         //public char ZipPostalCode { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         [Column("Time_Stamp")]
         public Byte[] TimeStamp { get; set; }
+
+        public virtual CompanyProfilePoco CompanyProfile { get; set; }
     }
     
 }

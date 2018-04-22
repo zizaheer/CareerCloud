@@ -44,9 +44,9 @@ namespace CareerCloud.BusinessLogicLayer
                     string extension = "";
 
                     string[] domainParts = poco.CompanyWebsite.Split('.');
-                    extension = "."+ domainParts[domainParts.Length - 1]; // gets the last part of the domain- .com,.ca etc
+                    extension = "." + domainParts[domainParts.Length - 1]; // gets the last part of the domain- .com,.ca etc
 
-                    if (extension != ".ca" || extension != ".com" || extension != ".biz")
+                    if (extension != ".ca" && extension != ".com" && extension != ".biz")
                     {
                         exceptions.Add(new ValidationException(600, $"Valid websites must end with the following extensions – .ca, .com, .biz"));
                     }
@@ -58,8 +58,14 @@ namespace CareerCloud.BusinessLogicLayer
 
                 if (!string.IsNullOrEmpty(poco.ContactPhone))
                 {
-                    poco.ContactPhone = poco.ContactPhone.Replace("-", "");
-                    if (!Regex.Match(poco.ContactPhone, @"^(\+[0-9]{9})$").Success)
+                    var phone = poco.ContactPhone.Replace("-", "");
+
+                    //if (!(int.TryParse(poco.ContactPhone, out int phone)))
+                    //{
+                    //    exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number (e.g. 416-555-1234)."));
+                    //}
+                    //else 
+                    if (phone.ToString().Length < 10)
                     {
                         exceptions.Add(new ValidationException(601, $"Must correspond to a valid phone number (e.g. 416-555-1234)."));
                     }
